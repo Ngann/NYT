@@ -22,8 +22,8 @@ header {
 .search-login {
   background-color: lightgrey;
   margin: 0 auto;
-  max-width: 1605px;
-  background: transparent;
+  width: auto;
+  /* background: transparent; */
   border-bottom: 0;
   padding: 4px 15px 2px;
   height: 36px;
@@ -31,14 +31,28 @@ header {
   display: flex;
 }
 
-.sid-nav {
-  left: 0;
+.side-nav {
+  width: 600px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .english {
   color: rgb(102, 102, 102);
   letter-spacing: 0.03em;
   margin-top: 2px;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content:flex-end;
 }
 
 .logo {
@@ -48,16 +62,14 @@ header {
   font-size: 12px;
   margin-top: -15px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .date-today {
   display: inline-block;
-  /* display: flex-end; */
-  align-self: flex-end;
 }
 .paper {
   display: inline-block;
-  align-self: flex-end;
 }
 
 
@@ -77,6 +89,7 @@ header {
   padding: 0 60px;
   border-bottom: 1px solid #000;
   position: sticky;
+  text-align: center;
 }
 
 .mini-nav {
