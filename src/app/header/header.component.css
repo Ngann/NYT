@@ -1,7 +1,4 @@
-body {
-  color: #333;
-  background-color: white;
-}
+a { color: inherit; }
 
 .outside {
 margin: 0;
@@ -31,7 +28,7 @@ header {
   padding: 4px 15px 2px;
   height: 36px;
   position: relative;
-  display: inline-block;
+  display: flex;
 }
 
 .sid-nav {
@@ -46,29 +43,40 @@ header {
 
 .logo {
   background-color: lightblue;
-}
-
-
-.date {
-  background-color: lightgrey;
-  justify-content: space-between;
-  border: none;
-  padding: 0;
-  height: 0;
-  /* transform: translateY(42px); */
-  display: inline-block;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  width: inherit;
+  font-size: 12px;
+  margin-top: -15px;
+  margin-bottom: 10px;
 }
 
 .date-today {
+  display: inline-block;
+  /* display: flex-end; */
+  align-self: flex-end;
+}
+.paper {
+  display: inline-block;
+  align-self: flex-end;
+}
+
+
+/* .date-paper {
+  background-color: lightgrey;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  line-height: 1rem;
+  font-weight: 500;
+  width: inherit;
   font-size: 12px;
   margin-bottom: 10px;
-  width: auto;
-}
+  display: flex;
+} */
 
 .masthead-mini-nav {
   border-top: 1px solid #ebebeb;
   padding: 0 60px;
   border-bottom: 1px solid #000;
+  position: sticky;
 }
 
 .mini-nav {

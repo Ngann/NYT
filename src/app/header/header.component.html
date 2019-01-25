@@ -2,9 +2,7 @@
   <header class="css-ahe4g0 e1nre7571">
     <section class="search-login">
       <div class="side-nav">
-        <div class="collapse navbar-collapse">
-
-        </div>
+        <button class="btn btn-info"></button>
         <button class="btn btn-info"></button>
       </div>
       <div class="english">
@@ -16,18 +14,23 @@
       </div>
     </section>
     <section class="logo">
-      <!-- //Side-Navigation -->
+      <div class="date-today">
+        <p>{{today | date:'fullDate'}}</p>
+      </div>
       <img width="500" alt="NYT Logo" src="assets/img/New-York-Times-Logo.png">
+      <div class="paper">
+        <a href="https://www.nytimes.com/section/todayspaper" class="css-2bwtzy">Today’s Paper</a>
+      </div>
     </section>
 
-    <section class="date">
+    <!-- <section class="date-paper">
       <div class="date-today">
         <p>{{today | date:'fullDate'}}</p>
       </div>
       <div class="paper">
         <a href="https://www.nytimes.com/section/todayspaper" class="css-2bwtzy">Today’s Paper</a>
       </div>
-    </section>
+    </section> -->
 
     <div data-testid="masthead-mini-nav" class="masthead-mini-nav">
       <ul data-testid="mini-nav" class="css-1vxc2sl">
