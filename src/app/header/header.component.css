@@ -1,0 +1,63 @@
+body {
+  color: #333;
+  background-color: white;
+}
+
+.outside {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+text-size-adjust: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+
+header {
+  margin: 0 auto;
+  padding: 0 3%;
+  background-color: lightyellow;
+  position: relative;
+  border-bottom: none;
+}
+
+.search-login {
+  background-color: lightgrey;
+  margin: 0 auto;
+  max-width: 1605px;
+  background: transparent;
+  border-bottom: 0;
+  padding: 4px 15px 2px;
+  height: 36px;
+  position: relative;
+}
+
+.sid-nav {
+  left: 0;
+}
+
+.logo {
+  background-color: lightblue;
+}
+
+
+.date {
+  background-color: lightgrey;
+}
+/*
+.logo {
+  background: #fff;
+  border-bottom: 1px solid #e2e2e2;
+  height: 36px;
+  padding: 8px 15px 3px;
+  position: relative;
+}
+
+.search-logo {
+  margin: 0 auto;
+  max-width: 1605px;
+  background: transparent;
+  border-bottom: 0;
+  padding: 4px 15px 2px;
+
+} */
