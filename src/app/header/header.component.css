@@ -11,6 +11,7 @@ font-size: 100%;
 text-size-adjust: 100%;
 font: inherit;
 vertical-align: baseline;
+font-family: Georgia;
 }
 
 header {
@@ -30,10 +31,17 @@ header {
   padding: 4px 15px 2px;
   height: 36px;
   position: relative;
+  display: inline-block;
 }
 
 .sid-nav {
   left: 0;
+}
+
+.english {
+  color: rgb(102, 102, 102);
+  letter-spacing: 0.03em;
+  margin-top: 2px;
 }
 
 .logo {
@@ -43,21 +51,43 @@ header {
 
 .date {
   background-color: lightgrey;
-}
-/*
-.logo {
-  background: #fff;
-  border-bottom: 1px solid #e2e2e2;
-  height: 36px;
-  padding: 8px 15px 3px;
-  position: relative;
+  justify-content: space-between;
+  border: none;
+  padding: 0;
+  height: 0;
+  /* transform: translateY(42px); */
+  display: inline-block;
 }
 
-.search-logo {
-  margin: 0 auto;
-  max-width: 1605px;
-  background: transparent;
-  border-bottom: 0;
-  padding: 4px 15px 2px;
+.date-today {
+  font-size: 12px;
+  margin-bottom: 10px;
+  width: auto;
+}
 
-} */
+.masthead-mini-nav {
+  border-top: 1px solid #ebebeb;
+  padding: 0 60px;
+  border-bottom: 1px solid #000;
+}
+
+.mini-nav {
+  /* margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px; */
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0px 4px;
+}
+
+.mini-nav-item {
+  list-style: none;
+  display: inline-block;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 500;
+}
