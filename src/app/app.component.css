@@ -26,3 +26,8 @@
 /* .container-small, .container-large {
     max-width: 100%;
 } */
+
+.main {
+  font-family: Georgia;
+  list-style: none;
+}

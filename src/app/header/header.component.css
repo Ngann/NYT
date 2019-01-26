@@ -61,7 +61,6 @@ header {
 }
 
 .logo {
-  /* background-color: lightblue; */
   font-family: nyt-franklin, helvetica, arial, sans-serif;
   width: inherit;
   font-size: 12px;
@@ -71,23 +70,12 @@ header {
 }
 
 .date-today {
-  display: inline-block;
+  display: inline-flex;
+  align-items: baseline;
 }
 .paper {
   display: inline-block;
 }
-
-
-/* .date-paper {
-  background-color: lightgrey;
-  font-family: nyt-franklin, helvetica, arial, sans-serif;
-  line-height: 1rem;
-  font-weight: 500;
-  width: inherit;
-  font-size: 12px;
-  margin-bottom: 10px;
-  display: flex;
-} */
 
 .masthead-mini-nav {
   border-top: 1px solid #ebebeb;
@@ -98,11 +86,6 @@ header {
 }
 
 .mini-nav {
-  /* margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px; */
   align-items: center;
   display: flex;
   justify-content: space-between;
