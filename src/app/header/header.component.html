@@ -1,31 +1,42 @@
 <div class="outside">
   <header>
     <section class="search-login">
-      <div class="logo-box">
+      <div class="inside-one">
+        <!-- <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item">item3</div>
+
+         -->
         <div class="side-nav">
           <button class="btn"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></button>
           <button class="btn"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
         </div>
-      </div>
-      <div class="english">
-        <button class="btn">ENGLISH</button>
-        <button class="btn">ESPANOL</button>
-        <button class="btn">中文</button>
-      </div>
-      <div class="login">
-        <button class="btn">SUBSCRIBE</button>
-        <button class="btn">LOGIN</button>
-        <!-- <svg class="css-10m9xeu" viewBox="0 0 16 16" fill="#333"><path d="M8,10c-2.5,0-7,1.1-7,3.5V16h14v-2.5C15,11.1,10.5,10,8,10z"></path>
-        <circle cx="8" cy="4" r="4"></circle></svg> -->
+
+        <div class="english">
+          <button class="btn"><b>ENGLISH</b></button>
+          <button class="btn">ESPANOL</button>
+          <button class="btn">中文</button>
+        </div>
+        <div class="login">
+          <button class="btn">SUBSCRIBE</button>
+          <button class="btn">LOGIN</button>
+          <!-- <svg class="css-10m9xeu" viewBox="0 0 16 16" fill="#333"><path d="M8,10c-2.5,0-7,1.1-7,3.5V16h14v-2.5C15,11.1,10.5,10,8,10z"></path>
+          <circle cx="8" cy="4" r="4"></circle></svg> -->
+        </div>
       </div>
     </section>
     <section class="logo">
-      <div class="date-today">
-        <p>{{today | date:'fullDate'}}</p>
-      </div>
+      <div class="image">
         <img width="500"  alt="NYT Logo" src="assets/img/New-York-Times-Logo.png">
-      <div class="paper">
-        <a href="https://www.nytimes.com/section/todayspaper" class="css-2bwtzy">Today’s Paper</a>
+      </div>
+      <div class="logo-grid">
+        <div class="date-today">
+          <p>{{today | date:'fullDate'}}</p>
+        </div>
+        <div class="empty"></div>
+        <div class="paper">
+          <a href="https://www.nytimes.com/section/todayspaper">Today’s Paper</a>
+        </div>
       </div>
     </section>
     <div data-testid="masthead-mini-nav" class="masthead-mini-nav">

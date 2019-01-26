@@ -19,21 +19,15 @@ header {
 }
 
 .search-login {
-  margin: 0 auto;
-  width: auto;
-  background: transparent;
-  border-bottom: 0;
-  padding: 4px 15px 2px;
-  height: 40px;
-  position: relative;
-  display: flex;
+  display: grid;
+  grid-template-columns: 3fr;
+  grid-template-rows: max-content auto auto;
+  grid-gap: 0;
 }
 
-.side-nav {
-  width: 600px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+.inside-one {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 33.2%);
 }
 
 .glyphicon-menu-hamburger {
@@ -47,42 +41,60 @@ header {
   color: rgb(102, 102, 102);
   letter-spacing: 0.03em;
   margin-top: 2px;
-  width: 600px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content:center;
+  font-stretch: ultra-condensed;
 }
 
 .login {
-  width: 600px;
   display: flex;
   align-items: center;
   justify-content:flex-end;
 }
 
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 33.2%);
+}
+
 .logo {
   font-family: nyt-franklin, helvetica, arial, sans-serif;
-  width: inherit;
   font-size: 12px;
-  margin-top: -15px;
-  margin-bottom: -15px;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 4fr;
+  grid-template-rows: max-content auto auto;
+  grid-gap: 0;
 }
 
 .date-today {
-  display: inline-flex;
-  align-items: baseline;
+  display: flex;
+  align-items:flex-end;
+  justify-content:flex-start;
 }
+
+.image {
+  text-align: center;
+  margin-bottom: -30px;
+}
+
 .paper {
-  display: inline-block;
+  display: flex;
+  align-items:flex-end;
+  justify-content:flex-end;
+  margin-bottom: 10px;
 }
 
 .masthead-mini-nav {
   border-top: 1px solid #ebebeb;
-  padding: 0 60px;
   border-bottom: 1px solid #000;
-  position: sticky;
-  text-align: center;
+  margin-top: 0px;
+  display: grid;
+  width: inherit;
+  display: grid;
+  grid-template-columns: 19fr;
+  grid-template-rows: max-content auto auto;
+  grid-gap: 0;
 }
 
 .mini-nav {
@@ -98,7 +110,8 @@ header {
   font-family: nyt-franklin, helvetica, arial, sans-serif;
   line-height: 1rem;
   font-weight: 500;
+  font-stretch:ultra-condensed;
   font-size: 12px;
   margin-top: 10px;
-  margin-right: 20px;
+  margin-right: 10px;
 }
