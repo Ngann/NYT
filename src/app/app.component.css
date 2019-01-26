@@ -1,4 +1,4 @@
-/* @media (min-width: 768px) {
+@media (min-width: 768px) {
     .container-small {
         width: 300px;
     }
@@ -21,13 +21,16 @@
     .container-large {
         width: 1500px;
     }
-} */
+}
 
-/* .container-small, .container-large {
+.container-small, .container-large {
     max-width: 100%;
-} */
+}
 
 .main {
   font-family: Georgia;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
