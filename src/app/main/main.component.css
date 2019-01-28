@@ -35,6 +35,15 @@ main {
   border-bottom: 1px solid #000;
 }
 
+.grid-main {
+  display: grid;
+  width: inherit;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: max-content auto auto;
+  grid-gap: 0;
+}
+
 .grid-one {
   display: grid;
   grid-template-columns: repeat(auto-fill, 33.2%);
@@ -47,15 +56,6 @@ main {
   grid-template-columns: repeat(auto-fill, 49.8%);
   grid-template-rows: repeat(auto-fill, 80px);
   grid-gap:1px;
-}
-
-.grid-main {
-  display: grid;
-  width: inherit;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-template-rows: max-content auto auto;
-  grid-gap: 0;
 }
 
 .info-item {
@@ -102,45 +102,39 @@ main {
 .item:nth-of-type(4n) {
   grid-row: span 2;
 } */
-.content {
-  display: grid;
-  grid-template-columns:repeat(auto-fill, 500px);
-  grid-template-rows: repeat(auto-fill, 300px);
-  grid-gap:1px;
-}
-
-.content-two {
-  display: grid;
-  grid-template-columns: 4fr 2fr;
-  grid-template-rows: repeat(auto-fill, 80px);
-  grid-gap:1px;
-}
-
-
-.inside-one {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  /* grid-template-rows: 100px 100px;
-  grid-gap: 5px; */
-  grid-auto-columns: 200px;
-  grid-auto-rows: 200px;
-}
-
-.insids-two{
+.grid-main-x {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  /* grid-template-rows: 100px 100px;
-  grid-gap: 5px; */
-  grid-auto-columns: 200px;
-  grid-auto-rows: 200px;
- }
+  grid-template-rows: max-content auto auto;
+  grid-gap: 0;
+  grid-auto-columns: auto;
+  grid-auto-rows: auto;
+}
 
- .image-main {
-   width: 370px;
-   height: 270px;
-   float: right;
- }
+.main-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(auto-fill, 80px);
+  grid-gap:1px;
+  /* background-color: lightblue; */
+}
+.main-image {
+  padding: 10px;
+  border-left: 1px solid #ebebeb;
+  margin-bottom: 10px;
+  float: right;
+}
 
+.main-article {
+  border-left: 1px solid #ebebeb;
+  margin-bottom: 10px;
+  /* background-color: lightgrey; */
+}
+
+.image-main {
+  width: 370px;
+  height: 270px;
+}
 
 @media (aspect-ratio: 1/1) {
   .item {
@@ -157,7 +151,7 @@ main {
 
 
 @media (max-aspect-ratio: 2/1) {
-  .item , .info-item {
+  .item , .info-item , .main-item {
     border: 2px solid grey;
   }
 }
