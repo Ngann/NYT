@@ -18,10 +18,16 @@
           <button class="btn">中文</button>
         </div>
         <div class="login">
-          <button class="btn">SUBSCRIBE</button>
-          <button class="btn">LOGIN</button>
-          <!-- <svg class="css-10m9xeu" viewBox="0 0 16 16" fill="#333"><path d="M8,10c-2.5,0-7,1.1-7,3.5V16h14v-2.5C15,11.1,10.5,10,8,10z"></path>
-          <circle cx="8" cy="4" r="4"></circle></svg> -->
+          <p>
+            <a (click)="subscribe()"><button class="btn">SUBSCRIBE</button></a>
+          </p>
+          <p *ngIf="isLoggedIn">
+            <a>{{userName}}</a>
+            <a (click)="logout()"><button class="btn">LOGOUT</button></a>
+          </p>
+          <p *ngIf ="!isLoggedIn">
+            <a (click)="login()"><button class="btn">LOGIN</button></a>
+          </p>
         </div>
       </div>
     </section>
