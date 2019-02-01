@@ -78,6 +78,16 @@ main {
   height: 70px;
   margin-top: -10px;
 }
+.image-stock {
+  width: 100%;
+  height: 70px;
+  margin-top: -10px;
+}
+.image-weather {
+  width: 100%;
+  height: 70px;
+  margin-top: -10px;
+}
 .info-article {
   border-left: 1px solid #ebebeb;
   margin-bottom: 10px;
@@ -92,7 +102,8 @@ main {
 .grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  border-bottom: 1px solid #000;
+  /* border-bottom: 1px solid #000; */
+  font-size: 12px;
 }
 .wrapper {
   display: grid;
@@ -102,7 +113,8 @@ main {
   justify-content: stretch;
   align-items: stretch;
   border-left: 1px solid #ebebeb;
-  padding: 1.5em;
+  border-bottom: 1px solid #000;
+  /* padding: 1.5em; */
 }
 
 .wrapper > div {
@@ -114,6 +126,12 @@ main {
   /* background: #ddd; */
 }
 
+.box {
+  padding: 1.5em;
+  border-top: 1px solid #ebebeb;
+  border-left: 1px solid #ebebeb;
+}
+
 .wrapper-article {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -121,12 +139,14 @@ main {
   grid-gap: 0;
   justify-content: stretch;
   align-items: stretch;
-  padding: 1.5em;
+  border-bottom: 1px solid #000;
+  /* padding: 1.5em; */
 }
 
 .image-article {
   width: 100%;
   height: auto;
+  padding-bottom: 1em;
   /* background-color: lightgrey; */
 }
 
@@ -137,7 +157,8 @@ main {
   grid-gap: 0;
   justify-content: stretch;
   align-items: stretch;
-  padding: 1.5em;
+  border-bottom: 1px solid #000;
+  /* padding: 1.5em; */
 }
 
 .wrapper-article-three {
@@ -147,36 +168,37 @@ main {
   grid-gap: 0;
   justify-content: stretch;
   align-items: stretch;
-  padding: 1.5em;
+  border-bottom: 1px solid #000;
+  /* padding: 1.5em; */
 }
 
 .wrapper-article-three > div {
-  background: #eee;
-  padding: 1em;
+  /* background: #eee; */
+  /* padding: 1em; */
 }
 
 .wrapper-article-three > div:nth-child(odd) {
-  background: #ddd;
+  /* background: #ddd; */
 }
 
 @media (aspect-ratio: 1/1) {
-  .item {
+  /* .item {
     color: red;
-  }
+  } */
 }
 
 
 @media (min-aspect-ratio: 8/5) {
-  .item {
+  /* .item {
       border: 2px solid lightblue;
-  }
+  } */
 }
 
 
 @media (max-aspect-ratio: 2/1) {
-  .item , .info-item , .main-item {
+  /* .item , .info-item , .main-item {
     border: 2px solid grey;
-  }
+  } */
 }
 
 /*
