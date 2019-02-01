@@ -194,6 +194,9 @@ main {
   /* background: #ddd; */
 }
 
+.wrapper-last {
+  border-bottom: 1px solid #000;
+}
 @media (aspect-ratio: 1/1) {
   /* .item {
     color: red;
