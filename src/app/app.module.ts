@@ -15,6 +15,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { masterFirebaseConfig } from './api-keys';
+import { WeatherComponent } from './weather/weather.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -32,6 +33,7 @@ export const firebaseConfig = {
     MainComponent,
     SiteContentComponent,
     HeaderComponent,
+    WeatherComponent,
   ],
   imports: [
     BrowserModule,

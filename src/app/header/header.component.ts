@@ -13,6 +13,7 @@ export class HeaderComponent {
   user;
   private isLoggedIn: Boolean;
   private userName: String;
+  infos: any[]=null;
 
   constructor(public authService: AuthenticationService) {
     this.authService.user.subscribe(user =>  {
