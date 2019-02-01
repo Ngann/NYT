@@ -18,15 +18,16 @@
           <button class="btn">中文</button>
         </div>
         <div class="login">
-          <p>
-            <a (click)="subscribe()"><button class="btn">SUBSCRIBE</button></a>
-          </p>
+          <!-- <p *ngIf="isLoggedIn">
+            <a (click)="subscribe()"><button class="btn-login">SUBSCRIBE</button></a>
+          </p> -->
           <p *ngIf="isLoggedIn">
             <a>{{userName}}</a>
-            <a (click)="logout()"><button class="btn">LOGOUT</button></a>
+            <a (click)="logout()"><button class="btn-login">LOGOUT</button></a>
           </p>
           <p *ngIf ="!isLoggedIn">
-            <a (click)="login()"><button class="btn">LOGIN</button></a>
+            <a (click)="subscribe()"><button class="btn-login">SUBSCRIBE</button></a>
+            <a (click)="login()"><button class="btn-login">LOGIN</button></a>
           </p>
         </div>
       </div>
