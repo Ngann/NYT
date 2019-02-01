@@ -8,7 +8,7 @@ _This is a clone of the New York Times website for educational purpose._
 ## Table of content
 
 - [Installation](#installation)
-- [API Setup](#API)
+- [API Setup](#API Setup)
 - [Technology](#technology)
 - [License](#license)
 
@@ -31,7 +31,7 @@ $ npm run build
 $ ng serve
 ```
 
-## API Key Setup
+## API Setup
 * Firebase
 * Weather
 
