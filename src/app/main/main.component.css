@@ -92,23 +92,26 @@ main {
 .grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  border-bottom: 1px solid #000;
 }
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: minmax(100px, auto);
+  grid-template-rows: minmax(150px);
   grid-gap: 0;
   justify-content: stretch;
   align-items: stretch;
+  border-left: 1px solid #ebebeb;
+  padding: 1.5em;
 }
 
 .wrapper > div {
-  background: #eee;
-  padding: 1em;
+  /* background: #eee; */
+  /* padding: 1em; */
 }
 
 .wrapper > div:nth-child(odd) {
-  background: #ddd;
+  /* background: #ddd; */
 }
 
 .wrapper-article {
@@ -118,15 +121,13 @@ main {
   grid-gap: 0;
   justify-content: stretch;
   align-items: stretch;
+  padding: 1.5em;
 }
 
-.wrapper-article > div {
-  background: #eee;
-  padding: 1em;
-}
-
-.wrapper-article > div:nth-child(odd) {
-  background: #ddd;
+.image-article {
+  width: 100%;
+  height: auto;
+  /* background-color: lightgrey; */
 }
 
 .wrapper-article-two {
@@ -136,15 +137,7 @@ main {
   grid-gap: 0;
   justify-content: stretch;
   align-items: stretch;
-}
-
-.wrapper-article-two > div {
-  background: #eee;
-  padding: 1em;
-}
-
-.wrapper-article-two > div:nth-child(odd) {
-  background: #ddd;
+  padding: 1.5em;
 }
 
 .wrapper-article-three {
@@ -154,6 +147,7 @@ main {
   grid-gap: 0;
   justify-content: stretch;
   align-items: stretch;
+  padding: 1.5em;
 }
 
 .wrapper-article-three > div {
@@ -164,8 +158,6 @@ main {
 .wrapper-article-three > div:nth-child(odd) {
   background: #ddd;
 }
-
-
 
 @media (aspect-ratio: 1/1) {
   .item {

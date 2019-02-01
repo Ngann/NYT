@@ -8,6 +8,7 @@ _This is a clone of the New York Times website for educational purpose._
 ## Table of content
 
 - [Installation](#installation)
+- [API Setup](#API)
 - [Technology](#technology)
 - [License](#license)
 
@@ -29,6 +30,18 @@ $ npm run build
 ```
 $ ng serve
 ```
+
+## API Key Setup
+* Firebase
+* Weather
+
+## Completed Features
+* Firebase Google authentication enabled for Login.
+* Weather API integration which allows the user to change the location and get the data for the location.
+
+## Planned Features
+* Stock API/widget to display live feed of the S&P 500, Dow, Nasdaq.
+* Reponsive with mobile devices.
 
 ## Technology
 * Javascript

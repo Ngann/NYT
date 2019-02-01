@@ -9,8 +9,8 @@
                 <img  class="image-info" src="assets/img/info-1.png" alt="img">
               </div>
               <div class="info-article">
-                <p><b>Another Weekend</b></p>
-                <p>Another weekend out of my life. I'm either too shy or humble</p>
+                <p><b>{{title}}</b></p>
+                <p>{{text}}</p>
               </div>
             </div>
             <div class="info-item">
@@ -18,8 +18,8 @@
                 <img class="image-info" src="assets/img/info-2.png" alt="img">
               </div>
               <div class="info-article">
-                <p><b>Another Weekend</b></p>
-                <p>Another weekend out of my life. Is gonna get me into trouble</p>
+                <p><b>{{title}}</b></p>
+                <p>{{text}}</p>
               </div>
             </div>
             <div class="info-item">
@@ -27,14 +27,18 @@
                 <img  class="image-info" src="assets/img/info-3.png" alt="img">
               </div>
               <div class="info-article">
-                <p><b>Another Weekend</b></p>
-                <p>Feel a body, warm and close behind me. I turn around, but you are not there.</p>
+                <p><b>{{title}}</b></p>
+                <p>{{text}}</p>
               </div>
             </div>
           </section>
           <section class="grid-two">
             <div class="item">Stock</div>
-            <div class="item">Weather</div>
+            <div class="item">Weather
+              <p>image</p>
+              <p>city</p>
+              <p>temperature</p>
+            </div>
           </section>
         </div>
 
@@ -46,7 +50,12 @@
     <div class="grid">
       <div class="wrapper-article">
         <div class="box box1">Box 1 : {{item}}</div>
-        <div class="box box2">Box 2 : {{item}}</div>
+        <div class="box box2">Box 2 :
+          <div class="article-image">
+            <img class="image-article" src="assets/img/Political-comedy.jpg" alt="img">
+          </div>
+          {{item}}
+        </div>
       </div>
       <div class="wrapper">
         <div class="box box3">Box 3: {{item}}</div>
@@ -67,6 +76,21 @@
       <div class="wrapper-article-three">
         <div class="box box1">Box 1: {{item}}</div>
         <div class="box box2">Box 2: {{item}}</div>
+      </div>
+      <div class="wrapper">
+        <div class="box box3">Box 3: {{item}}</div>
+        <div class="box box4">Box 4: {{item}}</div>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="wrapper-article">
+        <div class="box box1">Box 1 : {{item}}</div>
+        <div class="box box2">Box 2 : {{title}}
+          <div class="article-image">
+            <img class="image-article" src="assets/img/Political-comedy.jpg" alt="img">
+          </div>
+          {{item}}
+        </div>
       </div>
       <div class="wrapper">
         <div class="box box3">Box 3: {{item}}</div>
