@@ -102,6 +102,7 @@ main {
 .grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  /* grid-template-rows: max-content 100px; */
   /* border-bottom: 1px solid #000; */
   font-size: 12px;
 }
@@ -147,6 +148,18 @@ main {
   width: 100%;
   height: auto;
   padding-bottom: 1em;
+  /* background-color: lightgrey; */
+}
+
+.image-editor-one {
+  width: 100%;
+  height: auto;
+  /* background-color: lightgrey; */
+}
+
+.image-editor {
+  width: 120%;
+  height: auto;
   /* background-color: lightgrey; */
 }
 
