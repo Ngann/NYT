@@ -34,8 +34,8 @@ $ ng serve
 ```
 
 ## API
-Create a file in the app folder called api-keys.ts
-* Firebase: Go to google firebase console, create a project and get the app api key. Add the API key to the format below and add to file api-keys.ts.
+Create a file in the app folder named api-keys.ts
+* Firebase: Go to google firebase console, create a project and get the app API key. Add the API key to the format below and add to file api-keys.ts.
 ```
 export const masterFirebaseConfig = {
   apiKey:
