@@ -3,7 +3,7 @@
 
 ## Description
 
-_This is a clone of the New York Times website for educational purpose._
+_This was a two day project to clone the New York Times website for educational purposes.  The article titles are replaced with Dr. Seuss quotes and the main content uses lorem ipsom. The login feature was implemented using Google's firebase authentication._
 
 # ![demo](src/assets/img/demo.png)
 
@@ -34,9 +34,24 @@ $ ng serve
 ```
 
 ## API
-* Firebase
-* Weather
-
+Create a file in the app folder called api-keys.ts
+* Firebase: Go to google firebase console, create a project and get the app api key. Add the API key to the format below and add to file api-keys.ts.
+```
+export const masterFirebaseConfig = {
+  apiKey:
+   authDomain:
+   databaseURL:
+   projectId:
+   storageBucket:
+   messagingSenderId:
+  };
+```
+* Weather: Go to openweathermap.org and register for an account. Add the API key to the format below and add to file api-keys.ts.
+```
+export const weatherApi = {
+  apiKey:
+  };
+```
 ## Completed Features
 * Firebase Google authentication enabled for Login.
 * Weather API integration which allows the user to change the location and get the data for the location.
