@@ -5,6 +5,8 @@
 
 _This is a clone of the New York Times website for educational purpose._
 
+[DemoNYTClone](https://youtu.be/m8eY-pBRez8)
+
 ## Table of content
 
 - [Installation](#installation)
