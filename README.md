@@ -5,7 +5,7 @@
 
 _This is a clone of the New York Times website for educational purpose._
 
-# ![demo](app/assets/img/demo.png)
+# ![demo](src/assets/img/demo.png)
 
 ## Table of content
 
