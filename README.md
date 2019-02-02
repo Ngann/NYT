@@ -6,7 +6,7 @@
 _This was a two day project to clone the New York Times website for educational purposes.  The article titles are replaced with Dr. Seuss quotes and the main content uses lorem ipsom. The login feature was implemented using Google's firebase authentication._
 
 # ![demo](src/assets/img/demo.png)
-# ![demo](nytclone.mov)
+# ![demo](src/assets/img/NYT.mov)
 
 ## Table of content
 
