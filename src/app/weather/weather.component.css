@@ -1,0 +1,22 @@
+.section {
+  padding: 15px;
+  margin-left: 20px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-rows: max-content 100px; */
+  /* border-bottom: 1px solid #000; */
+  font-size: 12px;
+  border: 1px solid black;
+  padding: 30px;
+}
+
+.info {
+  border-left: 1px solid black;
+  padding: 20px;
+}
+
+.input {
+  padding: 20px;
+}

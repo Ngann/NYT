@@ -1,15 +1,23 @@
-<p>If you would like to change to city weather data which will update the navigation you may do this here!</p>
-<p>Weather API  Implementation</p>
-<form>
-  <div class="form-group">
-    <label for="city">City</label>
-    <input type=text #city value="Portland">
-  </div>
-  <button (click)="getHumidity(city.value)">Get humidity</button>
-</form>
+<div class="section">
+    <div class="grid">
+      <div class="input">
+        <p>Weather API  Implementation</p>
+        <form>
+          <div class="form-group">
+            <label for="city">City</label>
+            <input type=text #city value="Portland">
+          </div>
+          <button (click)="getHumidity(city.value)" class="btn-success">Get Weather Info</button>
+        </form>
+      </div>
 
-<p>{{infos.name}}</p>
-<p>{{infos.main.humidity}}</p>
-<p>{{infos.weather[0].main}}</p>
-<p>{{infos.weather[0].description}}</p>
-<p>{{infos.weather[0].icon}}</p>
+      <div class="info">
+        <p>City: {{infos.name}}</p>
+        <p>Humidity: {{infos.main.humidity}}</p>
+        <p>Temperature: {{infos.main.temp}} Kelvin</p>
+        <p>Weather:{{infos.weather[0].main}}</p>
+        <p>Weather decription: {{infos.weather[0].description}}</p>
+        <p>Weather icon: {{infos.weather[0].icon}}</p>
+      </div>
+    </div>
+  </div>
